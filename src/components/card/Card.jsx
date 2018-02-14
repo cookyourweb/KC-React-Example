@@ -13,10 +13,7 @@ const Card = props => (
                 <div className="card-body">
                 <h4 className="card-title">{props.name}</h4>
                 </div>
-                
                  <p className="card-text">{props.description}</p>
-
-
 
             </div>
 
