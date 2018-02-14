@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = props => (
 
-<div className="container">
-        <div className="col">
+
+<div className="row">
+        <div className="col-lg-3">
 
             <div className="card" style={{width: '18rem', margin: '0 auto'}}>
 
@@ -12,8 +14,7 @@ const Card = props => (
                 <h4 className="card-title">{props.name}</h4>
                 </div>
                 
-
-                <p className="card-text">{props.description}</p>
+                 <p className="card-text">{props.description}</p>
 
 
 
@@ -22,10 +23,24 @@ const Card = props => (
 
 
         </div>
-        
+    </div>
       
-        </div>    
+  
 
        
 );
 export default Card;
+
+Card.propTypes ={
+photo:PropTypes.string,
+name: PropTypes.string,
+description: PropTypes.string
+};
+
+
+Card.defaultProp ={
+    photo:'',
+    name: 'no-name',
+    description: 'no-description'
+    };
+    
