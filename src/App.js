@@ -17,7 +17,7 @@ class App extends Component {
 
         {Data.data.map(item => (
           <Card
-          
+          key={item.id}
           name={item.name}
           photo={item.photo}
           description={item.description}

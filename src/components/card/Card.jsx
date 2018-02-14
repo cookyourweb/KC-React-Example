@@ -1,19 +1,19 @@
 import React from 'react';
 
-const Card = () => (
+const Card = props => (
 
-<div className="ontainer">
+<div className="container">
         <div className="col">
 
             <div className="card" style={{width: '18rem', margin: '0 auto'}}>
 
-                <img className="img-fluid" src="" alt="card-foto"></img>
+                <img className="img-fluid" src={props.photo} alt="card-foto"></img>
                 <div className="card-body">
-                <h4 className="card-title">Título</h4>
+                <h4 className="card-title">{props.name}</h4>
                 </div>
                 
 
-                <p className="card-text">Descripción</p>
+                <p className="card-text">{props.description}</p>
 
 
 
